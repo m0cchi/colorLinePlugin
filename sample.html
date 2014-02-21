@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="utf-8" />
+    <title>Color Line Plugin</title>
+    <link rel="stylesheet" type="text/css" href="./css/colorLine.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/colorLine.js"></script>
+    <style type="text/css">
+    <!--
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+
+        #content{
+            width: 100%;
+            height: 100%;
+            display: table;
+        }
+        #centering{
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        #frame{
+            display: inline-block;
+            width: 800px;
+            height: 500px;
+            background-color: rgba(0,0,0,0.3);
+        }
+        #header{
+            display: inline-block;
+            margin: 0 0;
+            width: 800px;
+            height: 30px;
+            color: white;
+            background-color: rgba(0,0,0,0.2);
+        }
+        #main{
+            display: inline-block;
+            margin: 0 0;
+            width: 800px;
+            height: 440px;
+            overflow: scroll;
+            text-align: left;
+            color: white;
+            background-color: rgba(50,50,50,0.6);
+        }
+        #main > p{
+            padding-left: 10px;
+        }
+        #main > pre{
+            background-color: white;
+            color: black;
+        }
+        #footer{
+            display: inline-block;
+            margin: 0 0;
+            width: 800px;
+            height: 30px;
+            background-color: rgba(0,0,0,0.2);
+        }
+    -->
+    </style>
+    <script type="text/javascript">
+    <!--
+        $(document).ready(function(){
+            $(document.body).colorLine({lines:10,height:30,number:20});
+        });
+    -->
+    </script>
+</head>
+<body>
+    <div id="content">
+        <div id="centering">
+            <div id="frame">
+                <div id="header">Color Line Plugin</div>
+                <div id="main">
+                    <h1>Color Line Pluginとは</h1>
+                    <p>最新鋭のデザインであなたのホームページを彩る事が出来ます.</p>
+                    <p>導入方法は簡単!<br />
+                        Pluginをダウンロードし,パスの参照を出来る場所へ設置したら,
+                        以下のコードをあなたのホームページに貼るだけ.
+                        <pre>
+    &lt;link rel="stylesheet" type="text/css" href="./css/colorLine.css" /&gt;
+    &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">&lt;/script&gt;
+    &lt;script type="text/javascript" src="./js/colorLine.js"&gt;&lt;/script&gt;
+    &lt;style type="text/css"&gt;
+    &lt;!--
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+    --&gt;
+    &lt;/style&gt;
+    &lt;script type="text/javascript"&gt;
+    &lt;!--
+        $(document).ready(function(){
+            $(document.body).colorLine({lines:10,height:30,number:20});
+        });
+    --&gt;
+    &lt;/script&gt;
+                        </pre>
+                    </p>
+                </div>
+                <div id="footer"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
