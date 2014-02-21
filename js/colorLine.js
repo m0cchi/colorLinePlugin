@@ -1,5 +1,5 @@
 (function($) {
-    /* 変数 */
+    /* variable */
     var topMax = 0;
     var width = 0;
     var left = 0;
@@ -30,7 +30,7 @@
         }
         return this;
     }
-    /* 変数の初期化 */
+    /* variable init */
     function initVars(content){
         topMax = content.height() - thickness_max*2;
         top = Math.floor(Math.random() * (topMax+1) + thickness_max);
@@ -46,7 +46,6 @@
     }
 
     function showLine(content){
-        var direction = 1;
         var block;
         block = $('<div/>');
         block.addClass('color-line-element');
