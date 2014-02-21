@@ -1,7 +1,4 @@
 .color-line-element{
     position: fixed;
     z-index: -999;
-    width: 1px;
-    height: 1px;
-    left:0;
 }
